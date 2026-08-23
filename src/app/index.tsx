@@ -4,7 +4,7 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text className="text-2xl font-bold text-blue-500 bg-yellow-200 p-4">
+      <Text className="text-2xl font-bold text-blue-500 bg-yellow-200 p-2">
         Edit src/app/index.tsx to edit this screen.1234
       </Text>
       <Image
