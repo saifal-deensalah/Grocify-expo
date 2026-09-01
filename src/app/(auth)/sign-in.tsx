@@ -33,6 +33,7 @@ export default function SignInScreen() {
             height: 300,
             alignSelf: "center",
             marginTop: 40,
+            borderRadius: 80,
           }}
           resizeMode="contain"
         />
