@@ -1,3 +1,4 @@
+import { useGroceryStore } from "@/store/grocery-store";
 import { Show, useClerk, useUser } from "@clerk/expo";
 import { UserButton, UserProfileView } from "@clerk/expo/native";
 import { Pressable, StyleSheet, Text, View } from "react-native";
@@ -6,8 +7,11 @@ export default function Page() {
   const { user } = useUser();
   const { signOut } = useClerk();
 
+  const { isLoading, items } = useGroceryStore();
+  console.log(items);
+
   return (
-    <View style={styles.container} className="bg-backgtound te">
+    <View style={styles.container} className="bg-background text-foreground">
       <Text style={styles.title}>Welcome!</Text>
 
       <Show when="signed-in">
