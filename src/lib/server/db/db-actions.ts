@@ -67,6 +67,6 @@ export const deleteGroceryItem = async (id: string) => {
   await db.delete(groceryItems).where(eq(groceryItems.id, id));
 };
 
-export const clearGroceryItem = async (id: string) => {
+export const clearPurchasedItems = async () => {
   await db.delete(groceryItems).where(eq(groceryItems.purchased, true));
 };
